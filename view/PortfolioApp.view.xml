@@ -1,0 +1,211 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+	      xmlns="sap.m"
+		  controllerName="MyPortfolio.controller.PortfolioApp" 
+		  xmlns:html="http://www.w3.org/1999/xhtml"
+		  xmlns:f="sap.f" xmlns:tnt="sap.tnt" xmlns:layout="sap.ui.layout"
+		  xmlns:mc="sap.suite.ui.microchart"
+		  displayBlock="true" height="100%">
+	<App>
+		<pages>
+			<Page title="Portfolio Page" backgroundDesign="Transparent">
+				<customHeader>
+					<Bar design="Header">
+						<contentLeft>
+							<ToolbarSpacer width="10px"/>
+							<Image id="profile1" mode="Image" src="img/round-utk2.png" width="50px"/>
+							<ToolbarSpacer width="10px"/>
+							<Button id="utkarshView"
+									text="Contact Details"
+									width="130px"
+									press=".utkarshQuickView"/>
+							<ToolbarSpacer width="10px"/>
+						</contentLeft>
+						<contentMiddle>
+							<Text text='SAP BW-HANA / SAPUI5 / SAP CBP-TPM Consultant' textAlign="Center"/>	
+						</contentMiddle>
+						<contentRight>
+							<Button icon="sap-icon://doc-attachment" tooltip="Open Resume PDF"
+									text="Resume" press="onPressResume"/>
+							<Button icon="sap-icon://upload-to-cloud" tooltip="GitHub"
+									text="GitHub" press="onPressGit"/>
+						</contentRight>
+					</Bar>
+				</customHeader>
+				<layout:VerticalLayout width="25%">
+					<IconTabBar expandable="true" expanded="true" class="sapUiResponsiveContentPadding"
+								id="idSummaryTabBar">
+						<items>
+							<IconTabFilter key="summary" text="Prof. Summary" icon="sap-icon://employee-pane">
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Years of Experience" 
+								frameType = "OneByHalf" press=".onPressExperience">
+									<TileContent unit="years">
+										<NumericContent scale="yrs" value="4" valueColor="Good" indicator="Up" withMargin="false"
+										icon="sap-icon://history" />
+									</TileContent>
+								</GenericTile>
+								<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+										   displayTime="3000">
+									<GenericTile backgroundImage="img/bw-logo.png"
+									frameType="OneByOne" press="onBwPress">
+										<TileContent footer="My SAP BW skillset" />
+									</GenericTile>
+									<GenericTile backgroundImage="img/hana-logo.png"
+									frameType="OneByOne" press="onHanaPress">
+										<TileContent footer="My SAP HANA skillset" />
+									</GenericTile>
+									<GenericTile backgroundImage="img/abap-logo.jpg"
+									frameType="OneByOne" press="onAbapPress">
+										<TileContent footer="My SAP ABAP skillset" />
+									</GenericTile>
+									<GenericTile backgroundImage="img/sapui5-logo.png"
+									frameType="OneByOne" press="onUi5Press">
+										<TileContent footer="My SAP UI5 skillset" />
+									</GenericTile>
+									<GenericTile backgroundImage="img/bwip-logo.png"
+									frameType="OneByOne" press="onIpPress">
+										<TileContent footer="My SAP BW-IP skillset" />
+									</GenericTile>
+									<GenericTile backgroundImage="img/crm-logo.jpg"
+									frameType="OneByOne" press="onCrmPress">
+										<TileContent footer="My SAP CRM skillset" />
+									</GenericTile>
+								</SlideTile>
+								<Panel id="idPanel" expandable="true"
+									   expanded="true" width="auto">
+									<headerToolbar>
+										<OverflowToolbar>
+											<Title text="Academic Details" />
+											<!--<ToolbarSpacer />-->
+											<Button icon="sap-icon://study-leave" 
+											  type="Transparent" enabled="false"/>
+										</OverflowToolbar>
+									</headerToolbar>
+									<content>
+										<List items="{Education>/education}">
+											<NotificationListItem 
+											title="{Education>degree}"
+											authorName="{Education>institute}"
+											datetime="{Education>year}"
+											authorPicture="{Education>logo}"
+											showCloseButton="false"/>
+										</List>
+									</content>
+								</Panel>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout width="50%">
+					<IconTabBar id="idTechTabBar" class="sapUiResponsiveContentPadding"
+						select=".onFilterSelect" items="" expandable="true" expanded="true">
+						<items>
+							<IconTabFilter text="SAP BW/HANA" key="BW" icon="sap-icon://business-one" class="lsIconTabHeader">
+								<List headerText="Project Experience: SAP BW on HANA | SAP BW - IP"
+									  items="{BwModel>/projects}">
+									<FeedListItem
+										sender="{BwModel>Author}"
+										icon="{BwModel>AuthorPicUrl}"
+										senderPress="onPress"
+										iconPress="onPress"
+										iconDensityAware="false"
+										info="{BwModel>Type}"
+										timestamp="{BwModel>Date}"
+										text="{BwModel>Text}"
+										convertLinksToAnchorTags="All">
+									</FeedListItem>
+								</List>
+							</IconTabFilter>
+							<IconTabFilter text="HANA / S4" key="S4" icon="sap-icon://s4hana"
+							               class="lsIconTabHeader">
+								<List headerText="Project Experience: Enterprise HANA | S/4 Embedded Analytics"
+									  items="{HanaModel>/projects}">
+									<FeedListItem
+										sender="{HanaModel>Author}"
+										icon="{HanaModel>AuthorPicUrl}"
+										senderPress="onPress"
+										iconPress="onPress"
+										iconDensityAware="false"
+										timestamp="{HanaModel>Date}"
+										text="{HanaModel>Text}"
+										convertLinksToAnchorTags="All">
+									</FeedListItem>
+								</List>
+							</IconTabFilter>
+							<IconTabFilter text="ABAP / UI5" key="UI5" icon="sap-icon://sap-ui5" class="lsIconTabHeader">
+								<List headerText="Project Experience: SAP UI5 | SAP ABAP | SAP Gateway OData"
+									  items="{AbapModel>/projects}">
+									<FeedListItem
+										sender="{AbapModel>Author}"
+										icon="{AbapModel>AuthorPicUrl}"
+										senderPress="onPress"
+										iconPress="onPress"
+										iconDensityAware="false"
+										timestamp="{AbapModel>Date}"
+										text="{AbapModel>Text}"
+										convertLinksToAnchorTags="All">
+									</FeedListItem>
+								</List>
+							</IconTabFilter>
+							<IconTabFilter text="SAP CBP-TPM" key="CBP" icon="sap-icon://collections-insight" class="lsIconTabHeader">
+								<List headerText="Project Experience: SAP Trade Promotion Management"
+									  items="{CbpModel>/projects}">
+									<FeedListItem
+										sender="{CbpModel>Author}"
+										icon="{CbpModel>AuthorPicUrl}"
+										senderPress="onPress"
+										iconPress="onPress"
+										iconDensityAware="false"
+										timestamp="{CbpModel>Date}"
+										text="{CbpModel>Text}"
+										convertLinksToAnchorTags="All">
+									</FeedListItem>
+								</List>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</layout:VerticalLayout>
+				<layout:VerticalLayout width="25%">
+					<IconTabBar class="sapUiResponsiveContentPadding" expandable="true" expanded="true" id="idSkillTabBar">
+						<items>
+							<IconTabFilter text="Tech. Skills" key="skills" icon="sap-icon://syntax">
+								<FlexBox width="15rem" height="14rem" alignItems="Center" class="sapUiSmallMargin">
+									<items>
+										<mc:InteractiveBarChart labelWidth="25%" selectionEnabled="false" displayedBars="5">
+											<mc:bars>
+												<mc:InteractiveBarChartBar label="ABAP" value="7"/>
+												<mc:InteractiveBarChartBar label="JavaScript / NodeJS" value="9"/>
+												<mc:InteractiveBarChartBar label="Python" value="8"/>
+												<mc:InteractiveBarChartBar label="SQL / SQLScript" value="7"/>
+												<mc:InteractiveBarChartBar label="HTML / CSS" value="7"/>
+											</mc:bars>
+										</mc:InteractiveBarChart>
+									</items>
+								</FlexBox>
+								<FlexBox width="15rem" height="19rem" alignItems="Center" direction="Column" alignContent="Center" class="sapUiSmallMargin">
+										<Title titleStyle="H4"
+										text="Technical Skillset"/>
+										<Carousel class="sapUiContentPadding" loop="true">
+											<Image src="img/database-tools.png" />
+											<Image src="img/reporting-tools1.png" />
+										</Carousel>
+								</FlexBox>
+							</IconTabFilter>
+							<IconTabFilter text="Certifications" key="certs" icon="sap-icon://e-learning">
+								<List items="{Certify>/cert}">
+											<NotificationListItem 
+											title="{Certify>name}"
+											unread="true"
+											authorName="{Certify>author}"
+											datetime="{Certify>year}"
+											authorPicture="{Certify>logo}"
+											press=".onPressCertify"
+											showCloseButton="false"/>
+								</List>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</layout:VerticalLayout>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

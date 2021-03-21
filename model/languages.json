@@ -1,0 +1,24 @@
+{
+  "language": [
+    {
+      "name": "ABAP",
+      "level": "7"
+    },
+    {
+      "name": "JavaScript / NodeJS",
+      "level": "9"
+    },
+    {
+      "name": "Python",
+      "level": "8"
+    },
+    {
+      "name": "SQL / SQLScript",
+      "level": "7"
+    },
+    {
+      "name": "HTML / CSS",
+      "level": "7"
+    }
+  ]
+}

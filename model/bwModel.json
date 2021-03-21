@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "Author": "Implement ACDOCA G/L & Reconciliation Reporting",
+      "AuthorPicUrl": "img/synopsys-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Type": "On-Site",
+      "Text": "The scope of the project is to build a reporting solution for G/L and Reconciliation reporting based on ACDOCA. The project work involves setting up custom and enhancing standard datasources in ECC and pulling ACDOCA data into the BW (on HANA) to set up reporting structures."
+    },
+    {
+      "Author": "Implement Side-by-Side Promotions Planning",
+      "AuthorPicUrl": "img/ulta-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Type": "Off-Shore",
+      "Text": "The scope of the project is to build Side by Side Promotions Planning application for Ulta's Merchandising team. This application will automate the existing excel based process to plan for ads and promotions for various brands at Ulta. The project work also involves building an Offline Planning solution and a Backup/Recovery solution."
+    },
+    {
+      "Author": "Implement Overall Planning Application",
+      "AuthorPicUrl": "img/conagra-logo.png",
+      "Date": "November 2019 - April 2020",
+      "Type": "Off-Shore",
+      "Text": "The scope of the project is to implement the company’s overall planning application using SAP BW 7.5 + HANA as the continuing actuals provider and using other SAP planning applications (IP)."
+    },
+    {
+      "Author": "AMS and Enhancement Support",
+      "AuthorPicUrl": "img/univar-logo.png",
+      "Date": "November 2019 - April 2020",
+      "Type": "Off-Shore",
+      "Text": "The scope of the project is to Support AMS and Enhancements as requested by the client. The project work includes enhancing and maintaining the FI, Sales, Purchasing and Logistics related data models to fulfil critical business reporting needs."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "sap.app": {
+    "id": "PortfolioApp",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "invoiceRemote": {}
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "MyPortfolio.view.PortfolioApp",
+      "type": "XML",
+      "async": true
+    },
+    "dependencies": {
+      "libs": {
+        "sap.f": {},
+        "sap.m": {},
+        "sap.tnt": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "config": {
+      "sample": {
+        "stretch": true,
+        "files": [
+          "controller/PortfolioApp.controller.js",
+          "view/PortfolioApp.view.xml",
+          "view/utkarshView.fragment.xml",
+          "css/style.css",
+          "model/quickData.json",
+          "model/bwModel.json",
+          "model/cbpModel.json",
+          "model/abapModel.json",
+          "model/hanaModel.json",
+          "model/employment.json",
+          "model/resume.pdf",
+          "manifest.json",
+          "Component.js"
+        ]
+      }
+    }
+  }
+}

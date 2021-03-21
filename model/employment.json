@@ -1,0 +1,16 @@
+{
+  "employer": [
+    {
+      "Employer": "ADP India Pvt Ltd",
+      "Duration": "March 2021 to Present",
+      "Designation": "Senior Member Technical",
+      "logo": "img/adp-logo.png"
+    },
+    {
+      "Employer": "TekLink Software Pvt Ltd",
+      "Duration": "July 2017 to Feb 2021",
+      "Designation": "Consultant",
+      "logo": "img/teklink-logo.png"
+    }
+  ]
+}

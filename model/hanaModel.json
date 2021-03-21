@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "Author": "Revenue Reconciliation Reporting",
+      "AuthorPicUrl": "img/synopsys-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Text": "The scope of this project is to develop a solution to support the Revenue Reconciliation reporting of FI data in the S/4 source system. The solution utilised ABAP CDS and BW Modelling Tools. The application development was realized using ABAP CDS Views, Open ODS Views, Operational Data Provisioning and BEx Queries."
+    },
+    {
+      "Author": "Simplify Reporting using HANA SQLScript",
+      "AuthorPicUrl": "img/ulta-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Text": "The scope of this project is to create SQLScript Stored Procedures, Scalar Functions & Customer Exits to facilitate a Promotion Planning solution. The project work involves reading Current Year information from reports and using SQLScript and ABAP to display the Last Year data in the same report dynamically."
+    },
+    {
+      "Author": "SAP HANA Internal Accelerator",
+      "AuthorPicUrl": "img/teklink-logo.png",
+      "Date": "November 2019 - April 2020",
+      "Text": "The scope of this project is to develop an internal asset / accelerator for SAP Enterprise HANA platform. It involves development of HANA Calculation Views, exposing the HANA CV as OData service and consuming data from the CV in a front end reporting view."
+    },
+    {
+      "Author": "ABAP CDS Internal Accelerator",
+      "AuthorPicUrl": "img/teklink-logo.png",
+      "Date": "November 2019 - April 2020",
+      "Text": "The scope of this project is to develop an internal asset / accelerator using ABAP on HANA (CDS View) and OData service. It involves development of CDS-based application to display a Where-Used List (displaying end-to-end data flow of embedded BW objects from HANA studio ABAP perspective). Also, the project work involved creation of PowerBI dashboards consuming the CDS View data as OData service."
+    }
+  ]
+}

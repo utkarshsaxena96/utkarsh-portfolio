@@ -1,0 +1,34 @@
+{
+  "cert": [
+    {
+      "name": "APIs and Microservices Certification",
+      "logo": "img/fcc-logo.png",
+      "author": "FreeCodeCamp",
+      "year": "2020"
+    },
+    {
+      "name": "JavaScript Algorithms and Data Structures Certification",
+      "logo": "img/fcc-logo.png",
+      "author": "FreeCodeCamp",
+      "year": "2021"
+    },
+    {
+      "name": "JavaScript Developer Certification",
+      "logo": "img/hackerrank-logo.png",
+      "author": "HackerRank",
+      "year": "2020"
+    },
+    {
+      "name": "Transform your CRM with C/4HANA Certification",
+      "logo": "img/opensap-logo.png",
+      "author": "OpenSAP",
+      "year": "2020"
+    },
+    {
+      "name": "SQL Developer Certificate",
+      "logo": "img/learnsql-logo.png",
+      "author": "LearnSQL",
+      "year": "2020"
+    }
+  ]
+}

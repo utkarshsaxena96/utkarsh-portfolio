@@ -1,0 +1,44 @@
+{
+  "pages": [
+    {
+      "pageId": "employeePageId",
+      "header": "Hi, there!",
+      "icon": "img/round-utk2.png",
+      "title": "Utkarsh Saxena",
+      "description": "SAP BI / SAPUI5 Consultant",
+      "groups": [
+        {
+          "heading": "Contact Details",
+          "elements": [
+            {
+              "label": "Mobile",
+              "value": "+91-7989681876",
+              "elementType": "mobile"
+            },
+            {
+              "label": "Email",
+              "value": "utksxn96@gmail.com",
+              "emailSubject": "Subject",
+              "elementType": "email"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "elements": [
+            {
+              "label": "Name",
+              "value": "ADP Private Limited",
+              "url": "https://www.adp.com/",
+              "elementType": "link"
+            },
+            {
+              "label": "Address",
+              "value": " Laxmi Cyber City, Block C, Kondapur Village, Hyderabad, Telangana 500 084"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

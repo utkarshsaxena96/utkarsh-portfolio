@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "Author": "BW Analytics Dashboard using SAP UI5",
+      "AuthorPicUrl": "img/synopsys-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Type": "On-Site",
+      "Text": "The scope of the project is to build and deploy responsive dashboards for BW Analytics Reports for the organization's IT Department using SAPUI5 framework. The dashboard uses UI5 controls like Page, SplitApp, Table, Chart etc. The data is consumed in form of OData services using Data Binding and all CRUD operations are supported in the dashboard."
+    },
+    {
+      "Author": "Creation of OData services in Gateway Builder using ABAP",
+      "AuthorPicUrl": "img/synopsys-logo.jpg",
+      "Date": "November 2019 - April 2020",
+      "Type": "On-Site",
+      "Text": "The scope of the project is to build OData services in SAP Gateway Service Builder (SEGW) using SAP ABAP. The project work involves creation of OData services that support all CRUD operations implemented using ABAP methods. The OData entity sets are built using both SAP Tables as well as CDS Views."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "year": "2017",
+      "degree": "Bachelor of Engineering (Information Technology)",
+      "institute": "S.V.I.T.S. Indore",
+      "logo": "img/svits-logo.jpg"
+    },
+    {
+      "year": "2013",
+      "degree": "Higher Secondary School Certificate (12th)",
+      "institute": "D.P.S. Indore",
+      "logo": "img/dps-logo.jpg"
+    }
+  ]
+}

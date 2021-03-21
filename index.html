@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Utkarsh Saxena Portfolio</title>
+    <script
+      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+      id="sap-ui-bootstrap"
+      data-sap-ui-libs="sap.m, sap.suite.ui.microchart"
+      data-sap-ui-libs="sap.f"
+      data-sap-ui-theme="sap_belize"
+      data-sap-ui-compatVersion="edge"
+      data-sap-ui-async="true"
+      data-sap-ui-resourceroots='{"MyPortfolio":""}'
+      data-sap-ui-frameOptions="trusted"
+      data-sap-ui-preload=""
+    ></script>
+    <link rel="shortcut icon" type="image/jpg" href="img/round-utk2.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script>
+      sap.ui.getCore().attachInit(function () {
+        var app = new sap.m.App({ initialPage: "idPortfolioApp1" });
+        var page = sap.ui.view({
+          id: "idPortfolioApp1",
+          viewName: "MyPortfolio.view.PortfolioApp",
+          type: sap.ui.core.mvc.ViewType.XML,
+        });
+        app.addPage(page);
+        app.placeAt("content");
+      });
+    </script>
+  </head>
+  <body class="sapUiBody" id="content" role="application"></body>
+</html>

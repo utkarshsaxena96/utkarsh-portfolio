@@ -1,0 +1,20 @@
+{
+  "bwSkill": [
+    {
+      "info": "Experience of working in various project phases like business analysis, blueprinting, technical design, development, performance tuning, testing, documentation, maintenance and troubleshooting",
+      "count": 1
+    },
+    {
+      "info": "Worked extensively on BW 7.5 objects like ADSOs, Open ODS Views, Composite providers etc.",
+      "count": 2
+    },
+    {
+      "info": "Extensive experience of working with BW-related enhancements like creation of Generic Data-sources, Customer Exits, ABAP transformation routines, BADIs etc.",
+      "count": 3
+    },
+    {
+      "info": "Good Knowledge of Report Generation. Have experience with BEx to AO conversion. Worked extensively on BEx Analyzer in building Queries using Filters, Variables, Structures, Restricted Key Figures, Calculated Key Figures, Conditions, Exceptions.",
+      "count": 4
+    }
+  ]
+}

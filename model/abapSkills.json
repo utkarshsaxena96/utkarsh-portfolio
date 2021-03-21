@@ -1,0 +1,13 @@
+{
+  "abapSkill": [
+    {
+      "info": "Good experience of working on SAP ABAP on HANA, S/4HANA Embedded Analytics. Working on CDS Views (Interface/Consumption, OData services, Annotations) & AMDP procedures"
+    },
+    {
+      "info": "Hands-on experience with developing, maintaining and registering backend OData services in SAP Gateway Service Builder using ABAP, CDS Views, Function Modules."
+    },
+    {
+      "info": "Experience with BW ABAP related enhancements like Generic Extractors (based on Function Modules, BADIs etc.), Transformation routines, Customer Exits and REST API consumption"
+    }
+  ]
+}

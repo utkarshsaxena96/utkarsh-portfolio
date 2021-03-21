@@ -1,0 +1,32 @@
+#__filter1,
+#__filter2,
+#__filter3,
+#__filter4 {
+  float: left;
+  /* padding: 0px 35px 0px 35px; */
+  padding: 0 2.1rem 0 2.1rem;
+}
+
+#__filter5,
+#__filter6 {
+  float: left;
+  padding: 0px 20px;
+}
+
+/* Unused CSS goes here
+
+/* #__filter1 {
+  margin-left: 30px;
+}
+#__filter2 {
+  margin-left: 70px;
+  margin-right: 20px;
+}
+#__filter3 {
+  margin-left: 70px;
+  margin-right: 20px;
+}
+#__filter4 {
+  margin-left: 70px;
+  margin-right: 20px;
+} */
