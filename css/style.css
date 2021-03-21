@@ -3,14 +3,14 @@
 #__filter3,
 #__filter4 {
   float: left;
-  /* padding: 0px 35px 0px 35px; */
-  padding: 0 2.1rem 0 2.1rem;
+  padding: 0px 20px 0px 20px;
+  /* padding: 0 2.1rem 0 2.1rem; */
 }
 
 #__filter5,
 #__filter6 {
   float: left;
-  padding: 0px 20px;
+  padding: 0px 5px;
 }
 
 /* Unused CSS goes here
